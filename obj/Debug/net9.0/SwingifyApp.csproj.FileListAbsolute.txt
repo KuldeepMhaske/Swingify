@@ -15,6 +15,7 @@ D:\vs_code\SwingifyApp\obj\Debug\net9.0\SwingifyApp.csproj.CoreCompileInputs.cac
 D:\vs_code\SwingifyApp\obj\Debug\net9.0\SwingifyApp.MvcApplicationPartsAssemblyInfo.cache
 D:\vs_code\SwingifyApp\obj\Debug\net9.0\SwingifyApp.RazorAssemblyInfo.cache
 D:\vs_code\SwingifyApp\obj\Debug\net9.0\SwingifyApp.RazorAssemblyInfo.cs
+D:\vs_code\SwingifyApp\obj\Debug\net9.0\SwingifyApp.sourcelink.json
 D:\vs_code\SwingifyApp\obj\Debug\net9.0\rjimswa.dswa.cache.json
 D:\vs_code\SwingifyApp\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 D:\vs_code\SwingifyApp\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
