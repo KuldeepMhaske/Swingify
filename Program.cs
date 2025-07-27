@@ -1,9 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Bind to PORT from environment (needed for Render)
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
-builder.WebHost.UseUrls($"http://*:{port}");
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -17,16 +13,14 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); // ✅ Enable static file serving
+
 app.UseRouting();
 
 app.UseAuthorization();
 
-// Static files (if using WithStaticAssets from Razor Sdk)
-app.MapStaticAssets();
-
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
